@@ -93,6 +93,13 @@ body {
 	cursor: pointer;
 }
 
-#keyboard .a {
-	background: lightblue;
+#keyboard .down {
+  position: relative;
+  top: 1px;
+  left: 1px;
+  border-color: #fff;
+  background: lightblue ;
+  color: #fff;
 }
+
+
