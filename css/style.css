@@ -14,10 +14,10 @@ html {
 	box-sizing: inherit;
 }
 /* key board CSS */
-* {
+/** {
 	margin: 0;
 	padding: 0;
-}
+}*/
 body {
 	font-weight: 300;
 	background: #fff;
@@ -106,6 +106,28 @@ body {
   background: lightblue ;
   color: #fff;
 }
+
+
+/* todo css */
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
