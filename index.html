@@ -36,6 +36,8 @@
 
   <div ng-controller="mainController">
     <div keypress-events>Key: {{key}}</div>
+    <input ng-keydown="keypress($event)">
+          <p>last key: {{lastKey}}</p>
     <div>Type Count: {{count}}</div>
   </div>
     <!-- <textarea id="write" rows="6" cols="60"></textarea> -->
@@ -69,7 +71,7 @@
         <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
         <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
         <li class="capslock">caps lock</li>
-        <li class="letter">a</li>
+        <li class="a">a</li>
         <li class="letter">s</li>
         <li class="letter">d</li>
         <li class="letter">f</li>
@@ -93,7 +95,7 @@
         <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
         <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
         <li class="right-shift lastitem">shift</li>
-        <li class="space lastitem">Space</li>
+        <li class="space lastitem ">Space</li>
     </ul>
 </div>
 
