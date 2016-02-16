@@ -31,7 +31,13 @@
     </header>
 
 
-  <div id="container">
+  <div id="container" ng-controller="mainController">
+  
+
+  <div ng-controller="mainController">
+    <div keypress-events>Key: {{key}}</div>
+    <div>Type Count: {{count}}</div>
+  </div>
     <!-- <textarea id="write" rows="6" cols="60"></textarea> -->
     <ul id="keyboard">
         <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
@@ -87,7 +93,7 @@
         <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
         <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
         <li class="right-shift lastitem">shift</li>
-        <li class="space lastitem">&nbsp;</li>
+        <li class="space lastitem">Space</li>
     </ul>
 </div>
 
