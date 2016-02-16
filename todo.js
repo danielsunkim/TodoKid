@@ -23,7 +23,7 @@ $(document).ready(function () {
       // save this value
       var todoText = $(this).val();
       $(this).val("")
-      $('.box ul').append('<li><span>X </span>'+todoText+'</li>')
+      $('.box ul').append('<li><span><i class="fa fa-trash"></i></span>'+' '+todoText+'</li>')
     }
   });
 
