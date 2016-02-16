@@ -30,12 +30,65 @@ body {
 	box-sizing: border-box;
 }
 
+
+/* todo css */
 .box {
 	width: 360px;
 	margin: 0 auto;
-	border: 2px solid gray;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+/* todo css */
+.box h1 {
+	background: #2980b9;
+	color: white;
+	padding: 10px 20px;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 24px;
 }
 
+.box li {
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+/* todo css */
+.box li:nth-child(2n) {
+	background: #fff;
+}
+/* todo css */
+.box ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/* todo css */
+
+.fa-plus {
+	float: right;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+/* todo css adds in a */
+.box input {
+	font-size: 18px;
+	color: #2980b9;
+	background-color: #f7f7f7;
+	padding: 13px 13px 13px 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+/*adds blue border, outline is none no html highlights border, white background*/
+.box input:focus {
+	background: #fff;
+	border: 3px solid #2980b9;
+	outline: none;
+}
 
 #write {
 	margin: 0 0 5px;
@@ -61,7 +114,7 @@ body {
 	line-height: 40px;
 	text-align: center;
 	background: #fff;
-	border: 1px solid red;
+	border: 1px solid #2980b9;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
@@ -108,12 +161,6 @@ body {
 }
 
 
-/* todo css */
-
-.completed {
-	color: gray;
-	text-decoration: line-through;
-}
 
 
 
