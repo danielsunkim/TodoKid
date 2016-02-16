@@ -6,7 +6,6 @@
 }
 /* Border-box  */
 html {
-	box-sizing: border-box;
 	font-family: 'Roboto', 'Sans-Serif';
 	font-weight: 300;
 }
@@ -14,15 +13,26 @@ html {
 	box-sizing: inherit;
 }
 /* key board CSS */
-/** {
-	margin: 0;
-	padding: 0;
-}*/
+
 body {
 	font-weight: 300;
-	background: #fff;
+	background: url(/assets/wJkBAzj.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+nav.navbar-default.group {
+	background: #00c6ff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+}
+
+.fa-home, 
+nav.navbar-default.group span {
+	color: #fff;
+}
 
 #container {
 	margin: 100px auto;
@@ -85,10 +95,26 @@ body {
 }
 /*adds blue border, outline is none no html highlights border, white background*/
 .box input:focus {
-	background: #fff;
+	/*background: #fff;*/
 	border: 3px solid #2980b9;
 	outline: none;
 }
+
+/* span css when it appears, but it is hidden */
+.box span {
+	background: #e74c3c;
+	color: white;
+	width: 0;
+	display: inline-block;
+	text-align: center;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+/* when hover, show the span */
+.box li:hover span {
+	width: 40px;
+	opacity: 1;
+ }
 
 #write {
 	margin: 0 0 5px;
@@ -96,7 +122,6 @@ body {
 	width: 671px;
 	height: 200px;
 	font: 1em/1.5;
-	background: #fff;
 	border: 1px solid #fff;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -113,7 +138,6 @@ body {
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
-	background: #fff;
 	border: 1px solid #2980b9;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -157,7 +181,7 @@ body {
   left: 1px;
   border-color: #fff;
   background: lightblue ;
-  color: #fff;
+  /*color: #fff;*/
 }
 
 
