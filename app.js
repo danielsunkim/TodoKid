@@ -13,18 +13,7 @@ var element = angular.element(document);
 
 
 
-// angular.elemnt wraps a raw dom element or html string as a jQeruy element.
-element.on('keydown', function(event){
-  var keys = angular.element(document.getElementsByClassName(event.keyCode));
-  //grab the class name the keyCode class name, then add a class to it.
-  keys.addClass('down');
-});
-// angular.elemnt wraps a raw dom element or html string as a jQeruy element.
-element.on('keyup',function(event){
-  var keys = angular.element(document.getElementsByClassName(event.keyCode));
-  //grab the class name the keyCode class name, then remove a class from it.
-  keys.removeClass('down');
-});
+
 
 myApp.controller('mainController', ['$scope', '$document', '$rootScope', function($scope, $document, $rootScope) {
     
@@ -44,7 +33,6 @@ myApp.controller('mainController', ['$scope', '$document', '$rootScope', functio
       var key = $event.keyCode;
       var string = String.fromCharCode(key);
       $scope.increment();
-
       if ( keyObj[key] ) {
         $scope.lastKey = keyObj[key];
       } else {
@@ -52,7 +40,18 @@ myApp.controller('mainController', ['$scope', '$document', '$rootScope', functio
       }
     };
 
-     
+// angular.elemnt wraps a raw dom element or html string as a jQeruy element.
+element.on('keydown', function(event){
+  var keys = angular.element(document.getElementsByClassName(event.keyCode));
+  //if you have a directive that sets up a DOM event listener and changes some models inside the handler function, you need to call $apply() to ensure the changes take effect.
+    $scope.$apply($scope.keypress(event));
+  //grab the class name the keyCode class name, then add a class to it.
+  keys.addClass('down');
+});
+element.on('keyup',function(event){
+  var keys = angular.element(document.getElementsByClassName(event.keyCode));  
+  keys.removeClass('down');
+});
 
     
 
