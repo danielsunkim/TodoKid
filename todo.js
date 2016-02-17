@@ -27,6 +27,10 @@ $(document).ready(function () {
     }
   });
 
+  // Just do it shia
+  $('.box').on('click', '.fa-plus', function () {
+    $('.justdoit img').toggle();
+  })
 
 
 

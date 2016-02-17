@@ -33,8 +33,8 @@
 
   <div class="group" id="container" ng-controller="mainController">
   <!-- Angular Controller -->
-    <p>Last Key: {{lastKey}}</p>
-    <div>Type Count: {{count}}</div>
+    <p><span class="lastkey">Last Key: {{lastKey}}</span></p>
+    <div><span class="lastkey">Type Count: {{count}}</span></div>
     <!-- KEYBOARD -->
   <ul id="keyboard">
     <li class="symbol 192"><span class="off">`</span><span class="on">~</span></li>
@@ -94,8 +94,13 @@
   </ul>
 </div>
 
+<div class="justdoit">
+  <img src="/assets/tumblr_nphb9i6uMs1qksk74o1_500.gif">
+</div>
+
+
 <div class="box">
-  <h1>Todo list <i class="fa fa-plus"></i></h1>
+  <h1>Todo list <i class="fa fa-plus">Just do it</i></h1>
   <input type="text" placeholder="Add new todo">
   <ul>
     <li><span><i class="fa fa-trash"></i></span> Buy A Potion</li>
